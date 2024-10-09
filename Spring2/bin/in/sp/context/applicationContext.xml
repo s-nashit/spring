@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <!--<bean class="in.sp.beans.skill" id="s1">
+		<property name="web" value="MEAN"></property>
+		<property name="cloud" value="AWS"></property>
+		<property name="ai" value="Python"></property>
+		
+	</bean>
+    
+    <bean class="in.sp.beans.Employee" id = "emp1">
+		<property name ="name" value="mukesh"></property>
+		<property name ="mail" value="mukesh@abc.com"></property>
+		<property name ="phone" value="8797514075"></property>
+		<property name ="skill" ref="s1"></property>
+	</bean>-->
+	
+	<bean class="in.sp.beans.skill" id="s1">
+		<constructor-arg value="MEAN, Django"></constructor-arg>
+		<constructor-arg value="IBM Cloud, AWS"></constructor-arg>
+		<constructor-arg value="Python, Tensor"></constructor-arg>
+	</bean>
+	
+	<bean class="in.sp.beans.Employee" id = "emp1">
+		<constructor-arg value="nashit@mail.com"></constructor-arg>
+		<constructor-arg value="nashit"></constructor-arg>
+		<constructor-arg value="0000"></constructor-arg>
+		<constructor-arg ref="s1"></constructor-arg>
+	</bean> 
+
+</beans>

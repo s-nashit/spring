@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean class="in.sp.beans.StudentC" id="patna1">
+		<property name= "name" value = "nashit"></property>
+		<property name= "mail" value = "s_nashit@hotmail.com"></property>
+		<property name= "age" value = "30"></property>
+		
+	</bean>
+	
+
+
+	    <bean class="in.sp.beans.StudentC" id="ddn1">
+		<property name= "name" value = "ramakant"></property>
+		<property name= "mail" value = "ramakant@hotmail.com"></property>
+		<property name= "age" value = "20"></property>
+		
+	</bean>
+</beans>
